@@ -1,0 +1,23 @@
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+
+.header-menu .menu-link {
+  color: inherit;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .header-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    width: 300px;
+    z-index: 99;
+    border-left: 1px solid;
+  }
+}

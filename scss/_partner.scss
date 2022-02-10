@@ -1,0 +1,21 @@
+.partner {
+    margin-top: 35px;
+    &-list {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-item {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .partner {
+        &-list {
+            gap : 20px;
+        }
+    }
+}

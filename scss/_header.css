@@ -1,0 +1,32 @@
+.header {
+  padding-top: 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+
+.header-menu .menu-link {
+  color: inherit;
+}
+
+.header-auth {
+  display: flex;
+  align-items: center;
+}
+
+.header-auth .sigin {
+  font-weight: 500;
+}
+
+.header-auth .sigup {
+  font-weight: 500;
+}

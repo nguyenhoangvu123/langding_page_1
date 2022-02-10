@@ -1,0 +1,109 @@
+.header-menu {
+    display:flex;
+    align-items: center;
+    gap: 0 40px;
+     .menu-link {
+        color : inherit;
+        font-weight: 400;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    width:  30px;
+    height : 30px;
+    gap : 5px 0;
+    span {
+        width: 100%;
+        height: 5px;
+        background-color: $heading-color;
+        display: block;
+        pointer-events: none;
+    }
+}
+
+
+// .header-menu {
+//     display: none;
+// }
+@media screen and (min-width: 1024px) {
+    .item--auth {
+        display: none;
+    }
+}
+
+@media (hover: hover) {
+    .menu-link {
+        position: relative;
+        transition: all 0.2s linear;
+        &:after {
+            content : "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            height: 3px;
+            background-color: $primary-color;
+        }
+        &:hover {
+            color:  $primary-color;
+            &:after {
+                width: 100%;
+                left: 0 ;
+                right: auto;
+            }
+        }
+     }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .header-menu {
+        position :fixed;
+        left: auto;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        width:  300px;
+        z-index: 99;
+        border-left : 1px solid $text-color;
+        flex-direction: column;
+        gap: 20px 0;
+        padding-top: 60px;
+        align-items:stretch;
+        will-change: transform;
+        transition: all 0.2 ease-in ;
+      
+    }
+    .is-show {
+        transform: translateX(-100%);
+    }
+    .menu-link {
+        display: block;
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    .header-auth {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 767.98px) {
+    .header-menu {
+     transform: translateX(-100%);
+      
+     }
+    .is-show {
+        transform: translateX(-200%);
+    }
+}
+

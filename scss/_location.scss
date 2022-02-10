@@ -1,0 +1,26 @@
+.location {
+    margin-top: 145px;
+    &-header {
+        max-width: 550px;
+        margin : 0 auto 156px;
+    }
+    &-heading {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: calc(50 / 35);
+        padding-bottom: 20px;
+        text-align: center;
+        max-width: 380px;
+        margin-left:  auto;
+        margin-right: auto;
+    }
+    &-descr {
+        text-align: center;
+        line-height: calc(30 / 16);
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .location {
+        margin-top: 50px;
+    }
+}

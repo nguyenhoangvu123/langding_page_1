@@ -1,0 +1,101 @@
+.customer {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.customer-header {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.customer-heading {
+  max-width: 447px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: calc(50 / 35);
+  padding-bottom: 20px;
+}
+
+.customer-desc {
+  text-align: center;
+  line-height: calc(30 / 16);
+  padding-bottom: 60px;
+}
+
+.customer-item {
+  background: #ffffff;
+  border: 2px solid #f53838;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.customer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.customer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.customer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  object-fit: cover;
+}
+
+.customer-name {
+  font-size: 18px;
+  padding-bottom: 5px;
+  line-height: calc(30 / 18);
+}
+
+.customer-address {
+  font-size: 14px;
+}
+
+.customer-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.customer-rating span {
+  color: #0B132A;
+}
+
+.customer-content p {
+  line-height: calc(30 / 16);
+}
+
+.customer .slick-track {
+  display: flex;
+  gap: 0 50px;
+}
+
+.customer .slick-dots {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+
+.customer .slick-dots button {
+  font-size: 0;
+  border: 0;
+  outline: none;
+  background-color: #DDE0E4;
+  width: 15px;
+  height: 15px;
+  border-radius: 100rem;
+  cursor: pointer;
+}
